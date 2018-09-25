@@ -1,6 +1,7 @@
 # salewindow
 
-> salewindow
+> 这个是一个简单的测试的项目，仅用来学习如何使用GIT
+
 
 ## Build Setup
 
