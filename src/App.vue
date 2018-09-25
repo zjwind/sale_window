@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <router-view v-on:setToken="setToken" v-bind:token="token" />
+    <router-view class="app-router-view" />
   </div>
 </template>
 
@@ -15,13 +15,18 @@ export default {
 }
 </script>
 
+
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #c71616;
-  margin-top: 60px;
-}
+  #app .app-router-view {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
+    transform-style: preserve-3d;
+    visibility: visible;
+  }
 </style>
