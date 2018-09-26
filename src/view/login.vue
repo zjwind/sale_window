@@ -48,7 +48,7 @@ export default {
               let redirect = this.$router.currentRoute.query.redirect;
               this.$router.push(redirect);
             } else {
-              this.$router.push({ name: "Hello", params: {} });
+              this.$router.push({ name: "Main", params: {} });
             }
           } else {
             this.$confirm(data.rtnmsg, "提示", {
@@ -94,11 +94,7 @@ export default {
   height: 47px;
   width: 85%;
 }
-.login-container .tips {
-  font-size: 14px;
-  color: #fff;
-  margin-bottom: 10px;
-}
+
 .login-container .svg-container {
   padding: 6px 5px 6px 15px;
   color: #889aa4;
@@ -120,7 +116,7 @@ export default {
   right: 0;
   width: 400px;
   padding: 35px 35px 15px 35px;
-  margin: 120px auto;
+  margin: 180px auto;
 }
 .login-container .el-form-item {
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -137,9 +133,5 @@ export default {
   cursor: pointer;
   user-select: none;
 }
-.login-container .thirdparty-button {
-  position: absolute;
-  right: 35px;
-  bottom: 28px;
-}
+
 </style>
